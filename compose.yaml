@@ -1,0 +1,19 @@
+services:
+  gateway:
+    image: docker/mcp-gateway
+    command:
+      - --servers=atlassian  
+      - --secrets=/run/secrets/atlassian_secrets
+      - --transport=sse
+      - --port=8811
+      - --verbose
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    secrets:
+      - atlassian_secrets
+    ports:
+      - "8811:8811"
+
+secrets:
+  atlassian_secrets:
+    file: ./secrets/jira.env
