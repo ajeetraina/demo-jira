@@ -1,8 +1,8 @@
 atlassian:
   jira:
-    url: https://docker.atlassian.net
-    username: ajeet_raina@docker.com
+    url: https://companyname.atlassian.net
+    username: yourusername@company.com
   confluence:
-    url: https://docker.atlassian.net
-    username: ajeet_raina@docker.com
+    url: https://companyname.atlassian.net
+    username: yourusername@company.com
 ~
