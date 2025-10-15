@@ -1,0 +1,8 @@
+atlassian:
+  jira:
+    url: https://docker.atlassian.net
+    username: ajeet_raina@docker.com
+  confluence:
+    url: https://docker.atlassian.net
+    username: ajeet_raina@docker.com
+~
