@@ -1,4 +1,4 @@
-## Running MCP Gateway without Docker MCP Toolkit
+## Running MCP Gateway inside a Docker Container for Atlassian
 
 
 ### Prerequisite
