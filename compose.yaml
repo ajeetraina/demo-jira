@@ -2,13 +2,15 @@ services:
   gateway:
     image: docker/mcp-gateway
     command:
-      - --servers=atlassian  
+      - --servers=atlassian
       - --secrets=/run/secrets/atlassian_secrets
+      - --config=/config/config.yaml
       - --transport=sse
       - --port=8811
       - --verbose
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - ./config.yaml:/config/config.yaml:ro
     secrets:
       - atlassian_secrets
     ports:
